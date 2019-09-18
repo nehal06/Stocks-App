@@ -1,0 +1,97 @@
+html,
+body {
+  background: #171717;
+  /* color: #0000CD; */
+  /* color: #0203e2; blue*/
+  color: #08ff08;
+}
+
+.note {
+  color: #eeeeee;
+  margin-left: 1.2%;
+  padding: 10px 0;
+}
+
+.App {
+  /* text-align: center; */
+}
+
+.mainHeading {
+  margin-left: 1.5%;
+  font-weight: 400;
+}
+
+.tableHeading,
+.chartHeading {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.chartHeading {
+  margin-left: 6%;
+}
+
+.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+h2 {
+  color: #08ff08;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+  -webkit-box-shadow: 0px 0px 12px -2px black;
+  -moz-box-shadow: 0px 0px 12px -2px black;
+  box-shadow: 0px 0px 12px -2px black;
+}
+
+table tr:nth-child(even) {
+  background-color: rgba(40, 41, 41, 0.7);
+}
+
+table tr:hover {
+  background-color: rgba(40, 41, 41, 0.5);
+}
+
+table th,
+table td {
+  /* border: 1px solid white; */
+  border-collapse: unset;
+  font-weight: 300;
+  padding: 10px;
+  -webkit-box-shadow: 0 2px 2px -2px rgb(49, 50, 51);
+  -moz-box-shadow: 0 2px 2px -2px rgb(49, 50, 51);
+  box-shadow: 0 2px 2px -2px rgb(49, 50, 51);
+}
+
+table th {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.chart {
+  margin: 0 10px;
+  height: 500px !important;
+  -webkit-box-shadow: 0px 0px 12px -2px black;
+  -moz-box-shadow: 0px 0px 12px -2px black;
+  box-shadow: 0px 0px 12px -2px black;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 20px;
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .chart {
+    height: 400px !important;
+  }
+}
